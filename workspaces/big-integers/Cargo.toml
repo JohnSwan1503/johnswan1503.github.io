@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "lib/big-integers",
+    "bin/xtask",
+]
+resolver = "3"

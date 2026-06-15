@@ -1,0 +1,25 @@
+{
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ],
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.procMacro.attributes.enable": true,
+    "rust-analyzer.cargo.target": "aarch64-apple-darwin",
+    "rust-analyzer.hover.memoryLayout.alignment": "both",
+    "task.autoDetect": "on",
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "always",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
+    "rust-analyzer.cargo.extraEnv": {
+        "RUSTFLAGS": "-C target-feature=+neon"
+    },
+    "rust-analyzer.cargo.features": [
+        "128_byte_cache"
+    ]
+}
